@@ -200,7 +200,7 @@ packagetarget_init(_PackageTargetObject *self,
     LrHandle *handle = NULL;
     GError *tmp_err = NULL;
 
-    if (!PyArg_ParseTuple(args, "OszizLziOOOO:packagetarget_init",
+    if (!PyArg_ParseTuple(args, "Osziz*LziOOOO:packagetarget_init",
                           &pyhandle, &relative_url, &dest, &checksum_type,
                           &checksum, &expectedsize, &base_url, &resume,
                           &py_progresscb, &py_cbdata, &py_endcb,
